@@ -641,13 +641,9 @@
       ]
     });
 		var socket = io.connect('https://slide-backend.cagatay.me')
-
 		window.next = Reveal.next
 		window.prev = Reveal.prev
     socket.on('control', isNext => isNext ? Reveal.next() : Reveal.prev())
-
   </script>
-
 </body>
-
 </html>
